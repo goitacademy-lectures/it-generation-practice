@@ -31,14 +31,13 @@ h6 {
 img {
   display: block;
 }
-
 .container {
-  width: 1140px;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 1150px;
+  padding: 0 20px;
   outline: 1px solid red;
+  margin-right: auto;
+  margin-left: auto;
 }
-
 /* common styles */
 
 .section-title {
@@ -71,7 +70,58 @@ img {
   background-color: #02897a;
   border: 1px solid transparent;
 }
+/* header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 237px;
 
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+}
+.logo-img {
+  margin-right: 16px;
+}
+.header-nav {
+  margin-right: auto;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-nav-menu .header-item:not(:last-child) {
+  margin-right: 30px;
+}
+.header-button {
+  padding: 9px 24px;
+}
+.header-list-btn .header-item:not(:last-child) {
+  margin-right: 24px;
+}
+.header-link {
+  display: block;
+  line-height: 1.75;
+  padding: 26px 0;
+}
+.header-link.current {
+  font-weight: 600;
+}
+.switch-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  border: none;
+}
 /* -----hero----- */
 .hero-title {
   font-size: 40px;
