@@ -11,58 +11,67 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <!-- header -->
     <header class="header">
-      <a class="logo link" href="#">
-        <img
-          class="logo-img"
-          src="./image/header/logo.svg"
-          alt="logo"
-          width="40"
-          height="36"
-        />Product</a
-      >
+      <div class="container header-container">
+        <a class="header-logo link" href="#">
+          <img
+            class="logo-img"
+            src="./image/header/logo.svg"
+            alt="logo"
+            width="40"
+            height="36"
+          />Product</a
+        >
 
-      <nav class="header-nav">
-        <ul class="list header-list">
+        <nav class="header-nav">
+          <ul class="list header-list header-nav-menu">
+            <li class="header-item">
+              <a class="header-link link current" href="">Product</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Pricing</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Customers</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Resources</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="list header-list header-list-btn">
           <li class="header-item">
-            <a class="header-link link" href="">Product</a>
+            <button class="btn btn-primary header-button" type="button">Sign In</button>
           </li>
           <li class="header-item">
-            <a class="header-link link" href="">Pricing</a>
+            <button class="btn btn-accent header-button" type="button">Sign Up</button>
           </li>
           <li class="header-item">
-            <a class="header-link link" href="">Customers</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="">Resources</a>
+            <button class="btn switch-button" type="button" aria-label="switch-button">
+              <img
+                class="button-icon"
+                src="./image/header/icon-dark-light.svg"
+                alt="icon"
+                width="24"
+                height="24"
+              />
+            </button>
           </li>
         </ul>
-      </nav>
-
-      <ul class="list header-list">
-        <li class="header-item">
-          <button class="btn btn-primary header-button" type="button">Sign In</button>
-        </li>
-        <li class="header-item">
-          <button class="btn btn-accent header-button" type="button">Sign Up</button>
-        </li>
-        <li class="header-item">
-          <button class="btn-accent btn header-button" type="button" aria-label="sweetch-button">
-            <img
-              class="button-icon"
-              src="./image/header/icon-dark-light.svg"
-              alt="icon"
-              width="24"
-              height="24"
-            />
-          </button>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- hero -->
