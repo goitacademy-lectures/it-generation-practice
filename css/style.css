@@ -48,6 +48,7 @@ img {
 .section-title {
   font-size: 32px;
   line-height: calc(48 / 32);
+  margin-bottom: 25px;
 }
 
 .section-title-small {
@@ -215,10 +216,6 @@ img {
   padding: 15px 32px;
 }
 
-.managment-title {
-  margin-bottom: 25px;
-}
-
 /*managment*/
 
 .left-side {
@@ -249,7 +246,23 @@ img {
 .managment-subtitle {
   margin-bottom: 12px;
 }
+/* support */
+.support-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 84px;
+}
+.support-list {
+  margin-top: 30px;
+}
 
+.support-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.support-item {
+  padding-left: 65px;
+}
 /* news-feed */
 .news-feed-descr {
   font-weight: 500;
