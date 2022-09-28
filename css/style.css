@@ -220,9 +220,11 @@ img {
 
 .left-side {
   line-height: 1.62;
+  width: 486px;
 }
 
 .right-side {
+  margin-left: auto;
 }
 
 .managment-container {
@@ -263,6 +265,31 @@ img {
 .support-item {
   padding-left: 65px;
 }
+
+/* Collaborative */
+.collaboration-container {
+  display: flex;
+  align-items: center;
+}
+
+.collaborative-subtext {
+  margin-bottom: 30px;
+}
+
+.collaborative-item {
+  margin-bottom: 25px;
+}
+.collaborative-item:last-child {
+  margin-bottom: 0px;
+}
+
+.collaborative-subtitle {
+  margin-bottom: 12px;
+  font-size:16px;
+}
+
+/* width: 486px; */
+
 /* news-feed */
 .news-feed-descr {
   font-weight: 500;
